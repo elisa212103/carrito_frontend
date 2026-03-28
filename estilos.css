@@ -11,6 +11,20 @@ body {
     color: rgb(92, 85, 81)
 }
 
+.logo-superior {
+    padding: 20px 20px 10px 20px;
+}
+
+.logo-superior img {
+    display: block;
+    width: 180px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+}
+
 
 /* Estilos Index */
 
