@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Mi Tienda</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="catalogo">
+
+    <header>
+        <h1>Floristería</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="carrito.html">Carrito</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="titulo">
+            <h2>Catálogo de productos</h2>
+            <p>Consulta nuestros productos y añádelos al carrito.</p>
+        </section>
+
+        <section class="tabla-catalogo">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Imagen</th>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Añadir</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="rsrcs/gardenias.jpg" alt="Ramo gar">
+                        </td>
+                        <td class="nombre-producto">Ramo gardenias lila</td>
+                        <td class="precio-producto">29.99</td>
+                        <td>
+                            <div class="cantidad">
+                                <button type="button" onclick="cambiarCantidad(this, -1)">-</button>
+                                <input type="number" value="1" min="1">
+                                <button type="button" onclick="cambiarCantidad(this, 1)">+</button>
+                            </div>
+                        </td>
+                        <td>
+                            <button type="button" class="btn" onclick="anadirAlCarrito(this)">Añadir al carrito</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="rsrcs/tulipanes.jpg" alt="Ramo tulipanes selectos">
+                        </td>
+                        <td class="nombre-producto">Ramo tulipanes selectos</td>
+                        <td class="precio-producto">39.99</td>
+                        <td>
+                            <div class="cantidad">
+                                <button type="button" onclick="cambiarCantidad(this, -1)">-</button>
+                                <input type="number" value="1" min="1">
+                                <button type="button" onclick="cambiarCantidad(this, 1)">+</button>
+                            </div>
+                        </td>
+                        <td>
+                            <button type="button" class="btn" onclick="anadirAlCarrito(this)">Añadir al carrito</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="rsrcs/girasoles.jpg" alt="Teclado mecánico">
+                        </td>
+                        <td class="nombre-producto">Ramo girasoles</td>
+                        <td class="precio-producto">39.99</td>
+                        <td>
+                            <div class="cantidad">
+                                <button type="button" onclick="cambiarCantidad(this, -1)">-</button>
+                                <input type="number" value="1" min="1">
+                                <button type="button" onclick="cambiarCantidad(this, 1)">+</button>
+                            </div>
+                        </td>
+                        <td>
+                            <button type="button" class="btn" onclick="anadirAlCarrito(this)">Añadir al carrito</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="rsrcs/rosas.jpg" alt="Altavoz portátil">
+                        </td>
+                        <td class="nombre-producto">Ramo rosas coral</td>
+                        <td class="precio-producto">49.99</td>
+                        <td>
+                            <div class="cantidad">
+                                <button type="button" onclick="cambiarCantidad(this, -1)">-</button>
+                                <input type="number" value="1" min="1">
+                                <button type="button" onclick="cambiarCantidad(this, 1)">+</button>
+                            </div>
+                        </td>
+                        <td>
+                            <button type="button" class="btn" onclick="anadirAlCarrito(this)">Añadir al carrito</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mi Tienda Online. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="catalogo.js"></script>
+</body>
+</html>

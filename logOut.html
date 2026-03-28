@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar compra - Floristería</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="logout">
+
+    <header class="cabecera">
+        <div class="logo">
+            <img src="rsrcs/logo.png" alt="Logo de la tienda">
+            <span>Floristería</span>
+        </div>
+
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="carrito.html">Carrito</a>
+        </nav>
+    </header>
+
+    <main class="main-logout">
+        <section class="resumen-compra">
+            <h1>Resumen de tu compra</h1>
+            <h2 id="precio-total-final">Total: 0.00 €</h2>
+        </section>
+
+        <section class="datos-comprador">
+            <h3>Datos del comprador</h3>
+
+            <form id="form-compra">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="direccion">Dirección de entrega</label>
+                <input type="text" id="direccion" name="direccion" required>
+
+                <label for="codigoPostal">Código postal</label>
+                <input type="text" id="codigoPostal" name="codigoPostal" required>
+
+                <label for="comentarios">Indicaciones adicionales</label>
+                <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+                <fieldset>
+                    <legend>Preferencias del pedido</legend>
+
+                    <label>
+                        <input type="checkbox" name="regalo" value="si">
+                        Quiero envoltorio para regalo
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="tarjeta" value="si">
+                        Añadir tarjeta con dedicatoria
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="urgente" value="si">
+                        Entrega urgente
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Método de pago</legend>
+
+                    <label>
+                        <input type="radio" name="pago" value="tarjeta" required>
+                        Tarjeta
+                    </label>
+
+                    <label>
+                        <input type="radio" name="pago" value="bizum">
+                        Bizum
+                    </label>
+                </fieldset>
+
+                <button type="submit" class="btn-comprar">Confirmar pedido</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <p>&copy; 2026 Mi Tienda. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="logout.js"></script>
+</body>
+</html>

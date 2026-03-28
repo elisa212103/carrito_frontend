@@ -1,0 +1,389 @@
+/* Estilos compartidos*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:  rgb(237, 219, 161);
+    color: #222;
+}
+
+
+/* Estilos Index */
+
+/* CABECERA */
+.index .cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f7ed;
+    padding: 5px 10px;
+}
+
+.index .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: rgb(210, 99, 62);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.index .logo img {
+    width: 100px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.index .menu {
+    display: flex;
+    gap: 30px;
+}
+
+
+.index .menu a {
+    color: rgb(210, 99, 62);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.index .menu a:hover {
+    text-decoration: underline;
+}
+
+/* CARRUSEL */
+.index .carrusel {
+    position: relative;
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto;
+    background-color:  whitesmoke;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.index .carrusel img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+}
+
+.index .flecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color:  whitesmoke;
+    border: none;
+    font-size: 30px;
+    padding: 12px 18px;
+    cursor: pointer;
+}
+
+.index .flecha:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.index .izquierda {
+    left: 10px;
+}
+
+.index .derecha {
+    right: 10px;
+}
+
+/* PIE */
+.index .pie {
+    margin-top: 60px;
+    background-color: #f9f7ed;
+    color:rgb(210, 99, 62);
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.index .contacto h3 {
+    margin-bottom: 10px;
+}
+
+.index .contacto p {
+    margin: 5px 0;
+}
+
+.index .copyright {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+
+/* Catalogo */
+
+
+.catalogo {
+    background-color: rgb(237, 219, 161);
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+.catalogo header {
+    background-color:  whitesmoke;
+    color:  rgb(210, 99, 62);
+    text-align: center;
+    padding: 20px;
+}
+
+.catalogo nav a {
+    color:  rgb(210, 99, 62);
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* MAIN */
+.catalogo main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 10px;
+}
+
+.catalogo .titulo {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+/* GRID RESPONSIVE */
+.catalogo .tabla-catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* PRODUCTO */
+.catalogo .tabla-catalogo {
+    background-color: whitesmoke;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.catalogo .tabla-catalogo img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.catalogo .precio {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.catalogo .controles {
+    margin-top: 10px;
+}
+
+
+.catalogo .cantidad {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.catalogo .cantidad button {
+    width: 30px;
+    height: 30px;
+    background-color: #1f2a44;
+    color: whitesmoke;
+    border: none;
+    cursor: pointer;
+}
+
+.catalogo .cantidad input {
+    width: 50px;
+    text-align: center;
+}
+
+/* BOTÓN */
+.catalogo .btn {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(210, 99, 62);
+    color: whitesmoke;
+    border: none;
+    cursor: pointer;
+}
+
+/* FOOTER */
+.catalogo footer {
+    margin-top: 30px;
+    text-align: center;
+    padding: 15px;
+    background-color:  whitesmoke;
+    color: rgb(210, 99, 62);
+}
+
+
+/* Carrito */
+
+.carrito {
+    background-color: rgb(237, 219, 161);
+    font-family: Arial, sans-serif;
+}
+
+.carrito header {
+    background-color:  whitesmoke;
+    color: rgb(210, 99, 62);
+    text-align: center;
+    padding: 20px;
+}
+
+.carrito nav a {
+    margin: 0 10px;
+    color: rgb(210, 99, 62);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.carrito main {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.carrito .titulo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.carrito .tabla-carrito table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color:  whitesmoke;
+}
+
+.carrito .tabla-carrito th,
+.carrito .tabla-carrito td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.carrito .total {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.carrito .btn-comprar {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgb(210, 99, 62);
+    color:  whitesmoke;
+    border: none;
+    cursor: pointer;
+}
+
+.carrito .footer {
+    margin-top: 30px;
+    text-align: center;
+    padding: 15px;
+    background-color:  whitesmoke;
+    color: rgb(210, 99, 62);
+}
+
+
+/*logOut*/
+.logout .cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f7ed;
+    padding: 5px 10px;
+}
+
+.logout .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: rgb(210, 99, 62);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logout .logo img {
+    width: 100px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.logout .menu {
+    display: flex;
+    gap: 30px;
+}
+
+.logout .menu a {
+    color: rgb(210, 99, 62);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.logout .main-logout {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.logout .resumen-compra {
+    background-color:  whitesmoke;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.logout .datos-comprador {
+    background-color:  whitesmoke;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.logout form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.logout input,
+.logout textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.logout fieldset {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.logout .btn-comprar {
+    margin-top: 10px;
+    padding: 12px;
+    background-color: rgb(210, 99, 62);
+    color:  whitesmoke;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.logout .pie {
+    margin-top: 40px;
+    background-color: #f9f7ed;
+    color: rgb(210, 99, 62);
+    text-align: center;
+    padding: 20px;
+}

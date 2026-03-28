@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito - Mi Tienda</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="carrito">
+
+<header>
+    <h1>Floristería</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="carrito.html">Carrito</a>
+    </nav>
+</header>
+
+<main>
+    <section class="titulo">
+        <h2>Productos en tu carrito</h2>
+    </section>
+
+    <section class="tabla-carrito">
+        <table>
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Subtotal</th>
+                    <th>Eliminar</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="total">
+        <h3>Total: <span id="total">0 €</span></h3>
+        <button class="btn-comprar" onclick="finalizarCompra()">Finalizar compra</button>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Mi Tienda Online</p>
+</footer>
+
+<script src="carrito.js"></script>
+</body>
+</html>
