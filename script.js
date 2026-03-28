@@ -3,7 +3,8 @@ let indice = 0;
 const imagenes = [
     "rsrcs/ramoNaranja.jpg",
     "rsrcs/ramoRosa.jpg",
-    "rsrcs/ramoMesa.jpg"
+    "rsrcs/floresHorizontal2.jpg",
+    "rsrcs/floresHorizontal.jpg"
 ];
 
 const img = document.getElementById("imagen-carrusel");

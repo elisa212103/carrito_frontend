@@ -8,7 +8,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color:  rgb(237, 219, 161);
-    color: #222;
+    color: rgb(92, 85, 81)
 }
 
 
@@ -20,7 +20,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #f9f7ed;
-    padding: 5px 10px;
+    padding: 15px 25px;
 }
 
 .index .logo {
@@ -28,12 +28,12 @@ body {
     align-items: center;
     gap: 12px;
     color: rgb(210, 99, 62);
-    font-size: 22px;
+    font-size: 25px;
     font-weight: bold;
 }
 
 .index .logo img {
-    width: 100px;
+    width: 350px;
     height: 55px;
     object-fit: contain;
 }
@@ -47,7 +47,7 @@ body {
 .index .menu a {
     color: rgb(210, 99, 62);
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -137,6 +137,13 @@ body {
     padding: 20px;
 }
 
+.catalogo img {
+    width: 350px;
+    height: 55px;
+    object-fit: contain;
+}
+
+
 .catalogo nav a {
     color:  rgb(210, 99, 62);
     margin: 0 10px;
@@ -197,7 +204,7 @@ body {
 .catalogo .cantidad button {
     width: 30px;
     height: 30px;
-    background-color: #1f2a44;
+    background-color: rgb(92, 85, 81);
     color: whitesmoke;
     border: none;
     cursor: pointer;
@@ -240,6 +247,12 @@ body {
     color: rgb(210, 99, 62);
     text-align: center;
     padding: 20px;
+}
+
+.carrito img {
+    width: 350px;
+    height: 55px;
+    object-fit: contain;
 }
 
 .carrito nav a {
@@ -301,7 +314,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #f9f7ed;
-    padding: 5px 10px;
+    padding: 15px 25px;
 }
 
 .logout .logo {
@@ -314,8 +327,8 @@ body {
 }
 
 .logout .logo img {
-    width: 100px;
-    height: 55px;
+    width: 150px;
+    height: 82.5px;
     object-fit: contain;
 }
 
