@@ -33,7 +33,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f9f7ed;
+    background-color: rgb(249, 247, 237);
     padding: 15px 25px;
 }
 

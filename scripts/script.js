@@ -1,3 +1,5 @@
+const API_URL = "http://localhost:8080/api";
+
 let indice = 0;
 
 const imagenes = [
